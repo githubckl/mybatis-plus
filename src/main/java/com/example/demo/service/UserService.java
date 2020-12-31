@@ -13,6 +13,5 @@ public interface UserService {
     List<User> selectByNameAndAge(String name,int age);
     IPage<User> selectPage(Page<User> page);
     List<Map> selectUserRole();
-
     Page selectPageCondition(Page<User>page, QueryWrapper<User> wrapper);
 }
